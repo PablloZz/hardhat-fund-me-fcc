@@ -1,7 +1,11 @@
 {
+  "name": "hardhat-fund-me",
+  "author": "pavlo zalutskiy",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "test": "hardhat test",
-    "test-staging": "hardhat test --network sepolia",
+    "test": "yarn hardhat test",
+    "test:staging": "hardhat test --network sepolia",
     "lint": "solhint 'contracts/*.sol'",
     "lint:fix": "solhint 'contracts/**/*.sol' --fix",
     "format": "prettier --write .",
@@ -24,9 +28,12 @@
     "ethers": "^6.12.1",
     "hardhat": "^2.22.4",
     "hardhat-deploy": "^0.12.4",
-    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-gas-reporter": "^2.2.0",
     "solhint": "^5.0.1",
     "solidity-coverage": "^0.8.0",
     "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
